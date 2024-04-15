@@ -13,13 +13,13 @@ const Header = () => {
        
         <form className='w-1/2 flex flex-row justify-center items-center gap-1'>
         <input type='text' placeholder='Search here.....' className='h-8 w-1/2 rounded-lg font-bold text-black p-3' />
-        <button className='p-2'><FaSearch size={15}/></button> 
+        <button className='p-2 rounded-lg border-2 border-solid border-red-500 hover:bg-red-500'><FaSearch size={15}/></button> 
         </form>
         
         <div  className='flex flex-row gap-4 items-center text-2xl'>
            <MdSunny size={35}/>
             <Link to='/about'><h1>About</h1></Link>
-            <Link to='/sign-in'><h1>Sign in</h1></Link>
+            <Link to='/sign-in'><button className='bg-orange-400 p-1 rounded-lg shadow-xl text-xl text-black hover:bg-orange-500'>Sign in</button></Link>
         </div>
         
     </div>
